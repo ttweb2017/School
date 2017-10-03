@@ -1,0 +1,641 @@
+html,
+body {
+	background-image: url(../img/background.png);
+    height: 100%;
+	font-family: 'DINPro';
+	color: #521900;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+a {
+	color: #521900;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/* MY DESIGN ****************************************/
+/* ****************************** INDEX DESIGN ***************************************/
+.marginSections{
+    margin-top: 5%;
+}
+
+.titleColor{
+    color: #521900;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.homePageText{
+    color: #000;
+    font-size: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.saying{
+    color: white;
+    font-weight: normal;
+    font-family: 'Book Antiqua';
+}
+
+#filosofSmall{
+    display: none;
+}
+
+#title_logo {
+	width: 90%;
+}
+
+@media screen and (max-width: 992px){
+    #title_logo{
+        width: 45%;
+    }
+}
+
+#lang_divider {
+	padding-top: 15px;
+    padding-bottom: 15px;
+	color: white;
+}
+
+#galery {
+	margin-top: 5%;
+}
+
+#galery > div > div > img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.titleDecor {
+    color: #521900;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'DINPro';
+}
+
+.titleMargin {
+	margin-bottom: 3%;
+}
+
+/*#filosof {
+        position: absolute;
+        margin-top: -3.5%;
+        margin-right: -13%;
+}*/
+
+@media (min-width: 992px){
+    #filosof{
+        position: absolute;
+        margin-top: -9%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #filosof{
+        display: none;
+    }
+
+    #filosofSmall{
+        display: block;
+        margin: auto;
+        width: 40%;
+    }
+
+    #arrowSignBig{
+        display: none;
+    }
+
+    #filosof{
+        display: none;
+    }
+}
+
+/********** COURSES SUB MENU CARDS DESIGN *****************************************/
+.panel{
+	margin: 4% 4% 0 4%;
+	border-color: #521900;
+	color: #521900;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin:0;
+    padding:0;
+}
+.star {
+	color: #521900;
+}
+
+
+/* ==========================================================================
+   Contact us design
+   ========================================================================== */
+
+.contactUs-float {
+    position: fixed;
+    background-color: #521900;
+    float: right;
+    transform-origin: right top;
+    transition: padding 1s ease 0s, background-color .5s ease 0s;
+    transform: rotate(90deg);
+    top: 476px;
+    z-index: 999;
+    right: 0;
+    -webkit-transform-origin: right top 0;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.contactUs-float a {
+    color: white;
+    float: right;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 8px 25px 9px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contactUs-float:hover {
+    background-color: rgba(82, 25, 0, 0.69);
+}
+
+.smscreen {
+    display:none;
+}
+
+/* ==========================================================================
+   Submenu us design
+   ========================================================================== */
+
+.homeNavBack{
+    color: transparent;
+    background: url('../img/back.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    padding-top: 8%;
+    padding-bottom: 6%;
+}
+
+#rollTop{
+    display: none;
+}
+
+#rollBottom{
+    display: none;
+}
+
+@media (max-width: 992px){
+
+    .lgscreen {
+        display:none;
+    }
+    .smscreen {
+        display:inline !IMPORTANT;
+        -webkit-transform: rotate(270deg) !important;
+        transform: rotate(270deg)!important;
+        padding:15px !important;
+    }
+	
+	.homeNavBack{
+        color: transparent;
+
+        background: url('../img/rollPaperBody.png');
+        background-repeat: no-repeat;
+        /*background-attachment: fixed;*/
+        background-position: 10% center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-size: 97% 97%;
+        margin-bottom: -2%;
+        margin-top: -2%;
+    }
+
+    #rollTop{
+        display: block;
+    }
+
+    #rollBottom{
+        display: block;
+    }
+	#pero_panel {
+		display: none;
+	}
+}
+
+.homeNavBack .nav-tabs {
+	border-bottom: 1px solid #521900;
+}
+
+.homeNavBack .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: #521900;
+	color: #fff;
+	border: 1px solid #521900;
+}
+
+.homeNavBack .nav-tabs > li > a:hover {
+	background-color: #521900;
+	color: #fff;
+	border: 1px solid #521900;
+}
+
+.homeNavBack .nav-tabs > li > a {
+	color: #521900;
+	font-weight: bold;
+}
+
+/* ==========================================================================
+   Pero in submenu us design
+   ========================================================================== */
+#pero_panel {
+	margin: 4% 4% 2% 4%;
+}
+
+.peroPic {
+    background-image: url('../img/pero.png');
+    background-repeat: no-repeat;
+    height: 175px;
+}
+
+@media (max-width: 992px){
+	.peroPic {
+        background-image: url('../img/pero.png');
+        background-repeat: no-repeat;
+        background-position: 10% center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-size: 100% 100%;
+        height: 90px;
+    }
+}
+
+
+/* ==========================================================================
+   NEWS section design
+   ========================================================================== */
+.homeNav{
+    color: transparent;
+
+    background: url('../img/back.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    padding-top: 4%;
+    padding-bottom: 6%;
+}
+
+@media screen and (max-width: 992px){
+	.homeNav{
+        color: transparent;
+
+        background: url('../img/back.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        /*background-attachment: fixed;*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-size: 100% 100%;
+        padding-top: 15%;
+        padding-bottom: 20%;
+    }
+}
+/* ==========================================================================
+   TEACHERS section design
+   ========================================================================== */
+
+.teacher-translation-index {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.image  {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.image:hover  {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+    cursor:pointer;
+}
+
+.teacherBack{
+    background: url('../img/paperRoll.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.teacherPhoto{
+    float: right;
+    width: 80%;
+}
+
+.teacherPhone{
+    width: 50%;
+}
+
+@media screen and (max-width: 992px){
+	.teacherPhoto{
+        display: block;
+        margin: auto;
+        width: 40%;
+        float: none;
+    }
+}
+
+@media (max-width: 992px){
+    .teachers{
+        display: none;
+    }
+}
+
+@media (min-width: 991px){
+    .teacherCarousel{
+        display: none;
+    }
+}
+
+
+/* ==========================================================================
+   NEWS section design
+   ========================================================================== */
+.news_text {
+	float: left;
+    margin-right: 3%;
+}
+
+.news-index {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* ==========================================================================
+   ABOUT COURSES section design
+   ========================================================================== */
+   
+.course-translation-index {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* ==========================================================================
+   ABOUT COURSES section design
+   ========================================================================== */
+.panel-success > .panel-heading {
+    color: #fff;
+    background-color: #521900;
+    border-color: #521900;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #521900;
+}
+
+.nav-stacked > li > a:hover {
+	color: #fff;
+    background-color: rgba(82, 25, 0, 0.76);
+}
+
+/* ==========================================================================
+   CONTACT section design
+   ========================================================================== */
+   
+.site-contact {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+/* ==========================================================================
+   TEST section design
+   ========================================================================== */
+   
+.site-test {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+/*------------------------------------------------------------------------------
+                           FOOTER
+------------------------------------------------------------------------------*/
+.footer {
+	margin-top: 4%;
+	background-color: #521900;
+	height: auto;
+}
+
+.footerText {
+    color:whitesmoke;
+    font-size:0.9em;
+    line-height:18px;
+    font-weight:100;
+}
+
+@media screen and (max-width: 992px){
+
+    #footerImg {
+        display:none;
+    }
+}
+
+/*------------------------------------------------------------------------------
+                           Pagination button design
+------------------------------------------------------------------------------*/
+.pagination > .active > a,
+ .pagination > .active > span,
+ .pagination > .active > a:hover,
+ .pagination > .active > span:hover,
+ .pagination > .active > a:focus,
+ .pagination > .active > span:focus {
+	
+	background-color: #521900;
+	border-color: #381201;
+}
+
+.pagination > li > a:hover, 
+.pagination > li > span:hover, 
+.pagination > li > a:focus, 
+.pagination > li > span:focus {
+	background-color: rgba(82, 25, 0, 0.69);
+	border-color: #521900;
+	color: #eee;
+}
+.pagination > li > a, .pagination > li > span {
+	color: #732d5e;
+}
+
+/*------------------------------------------------------------------------------
+                           Pagination button design
+------------------------------------------------------------------------------*/
+.btn-primary {
+    color: #fff;
+    background-color: #521900;
+    border-color: #381201;
+}
+
+.btn-primary:hover {
+	background-color: #381201;
+	border-color: #381201;
+}
+
+.btn-primary:focus {
+	background-color: #521900;
+	border-color: #381201;
+}
+
+.btn-primary:active {
+	background-color: #521900;
+	border-color: #381201;
+}
+
+.btn-primary:active:focus {
+	background-color: #521900;
+	border-color: #381201;
+}
+
+
+.breadcrumb {
+	background-color: transparent;
+	border-bottom: 0.1em solid rgba(56, 18, 1, 0.24);
+}
